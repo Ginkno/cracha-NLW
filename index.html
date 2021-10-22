@@ -1,0 +1,80 @@
+<!--
+    Arquivo html a ser usado para elaboração
+    de uma aplicação decorrente do NLW
+    Mission: Origin (iniciante)
+-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Mayke Brito - DoWhile 2021</title>
+
+    <!--Cascating StyleSheet "Estilos em cascata" significa dizer que o elemento
+    //que for estilizado por último terá preponderância na aparência da página em
+    //um código de exemplo: h1 { font-size: 12px; } h1 { font-size: 16px; } qual
+    //será o tamanho da fonte a ser mostrado na página? O "font-size: 16px" pois
+    //ele aparece por último, segundi o movimento de cascata/cachoeira-->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <main>
+      <!-- a div class content terá dentro dela todos os componenetes principais do cartão como foto, links e informações-->
+      <div class="container">
+        <!-- Aqui em avatar, será a div que fará a separação da foto pessoal 
+        e do selo rocketseat dos demais componentes do cartão-->
+        <div class="avatar">
+          <!-- Aqui embaixo irão as imagens que estarão incluídas na pasta "images"
+          incluída na pasta NLW Origin-->
+          <span>
+            <img src="images/build.svg" alt="Selo Rocketseat" />
+          </span>
+
+          <img
+            src="https://lorempixel.com/185/185/people/"
+            alt="Foto Pessoal"
+            id="userImage"
+          />
+        </div>
+        <h1 id="userName">Mayke Brito</h1>
+        <a id="userLink" href="https://instagram.com/maykbrito">
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">@maykbrito</span>
+        </a>
+        <p id="userBio">An instructor focused on helping pople start programming for web</p>
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/maykebrito" target="_blank">
+              <img src="images/youtube.svg" alt="ícone youtube" />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://facebook.com/maykebrito" target="_blank">
+              <img src="images/facebook.svg" alt="ícone facebook" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/maykebrito" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/maykebrito" target="_blank">
+              <img src="images/twitter.svg" alt="ícone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
